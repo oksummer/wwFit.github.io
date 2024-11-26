@@ -22,15 +22,13 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="input输入框       身高                    体重                    点击查看您的BMI       function btnClink()     {         var input1 &#x3D; document.getElementById(&quot;high&quot;);         var input2 &#x3D; do">
-<meta property="og:type" content="article">
+    <meta property="og:type" content="article">
 <meta property="og:title" content="体脂率&amp;体重指数">
 <meta property="og:url" content="http://example.com/post/5.html">
 <meta property="og:site_name" content="维维健身计划">
-<meta property="og:description" content="input输入框       身高                    体重                    点击查看您的BMI       function btnClink()     {         var input1 &#x3D; document.getElementById(&quot;high&quot;);         var input2 &#x3D; do">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-10-11T05:08:03.000Z">
-<meta property="article:modified_time" content="2024-11-26T04:31:31.128Z">
+<meta property="article:modified_time" content="2024-11-26T04:37:26.230Z">
 <meta property="article:author" content="张三">
 <meta name="twitter:card" content="summary">
 
@@ -93,7 +91,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -106,7 +104,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">免费计算你的身体质量指数 (BMI)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">BMI 中国标准</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -183,7 +180,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-26 12:31:31" itemprop="dateModified" datetime="2024-11-26T12:31:31+08:00">2024-11-26</time>
+      <time title="修改时间：2024-11-26 12:37:26" itemprop="dateModified" datetime="2024-11-26T12:37:26+08:00">2024-11-26</time>
     </span>
 
   
@@ -195,87 +192,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>input输入框</title>
-</head>
-<body>
-    <label for="high">身高</label>
-    <input type="text" placeholder="请输入身高" id = "high" >
-    <br>
-    <br>
-    <label for="weight">体重</label>
-    <input type="text" placeholder="请输入体重" id = "weight">
-    <br>
-    <br>
-    <button onclick="btnClink()">点击查看您的BMI</button>
-</body>
-<script>
-    function btnClink()
-    {
-        var input1 = document.getElementById("high");
-        var input2 = document.getElementById("weight");
-        var shengao = input1.value / 100;
-        var tizhong = input2.value / 2;
-        var res = tizhong / shengao / shengao;
-        res = res.toFixed(2);
-        if(res <= 18.4)
-        {
-            alert("BMI = " + res + " " + "偏瘦，" + " 多吃肉");
-        }
-        else if(res >= 18.5 && res <= 23.9)
-        {
-            alert("BMI = " + res + " " + "正常，" + " 继续保持");
-        }
-        else if(res >= 24.0 && res <= 27.9)
-        {
-            alert("BMI = " + res + " " + "偏重，" + " 多运动");
-        }
-        else
-        {
-            alert("BMI = " + res + " " + "肥胖，" + " 多多运动");
-        }
-    }    
-</script>
-</html>
-
-
-
-<div class="my_bmi">
-<div class="my_bmi_ipt">
-<div class="my_bmi_title"><h1>免费计算你的身体质量指数 (BMI)</h1></div>
-<form method="post" action="/">
-<div class="div_tbl">
-<div class="col msg first">度量单位:</div><div class="col ctrl"><div class="box"><input type="radio" name="f_units" value="units_is" id="f_units_is" checked="" onclick="Unit('单位: 厘米 cm', '单位: 千克 kg');"> <label for="f_units_is">公制</label> &nbsp; <input type="radio" name="f_units" value="units_us" id="f_units_us" onclick="Unit('单位: 英寸 in', '单位: 磅 lb');"> <label for="f_units_us">英制</label></div></div>
-<div class="col msg">我的身高<span id="id_height_unit1" class="for_mobible_span">(单位: 厘米 cm)</span>:</div><div class="col ctrl"><div class="box"><input type="text" size="6" name="f_height" value=""><span id="id_height_unit2" class="for_desktop">单位: 厘米 cm</span></div></div>
-<div class="col msg">我的体重<span id="id_weight_unit1" class="for_mobible_span">(单位: 千克 kg)</span>:</div><div class="col ctrl"><div class="box"><input type="text" size="6" name="f_weight" value=""><span id="id_weight_unit2" class="for_desktop">单位: 千克 kg</span></div></div>
-<div class="col msg">BMI 标准:</div><div class="col ctrl"><select id="f_def" name="f_def">
-    <option value="def_international">国际标准</option>
-    <option value="def_chinese" selected="selected">中国标准</option>
-    <option value="def_japanese">日本标准</option>
-    <option value="def_singapore">新加坡标准</option>
-  </select> </div>
-<div class="col empty"></div><div class="col ctrl"><input type="checkbox" name="f_autosave" value="1" checked=""> 自动保存 BMI 历史记录</div>
-<div class="col empty"></div><div class="col ctrl"><input type="submit" value="计算 BMI" title="计算 BMI" name="f_submit"></div>
-<div class="clear"></div>
-</div>
-</form>
-</div>
-
-<div class="my_bmi_def">
-<div class="my_bmi_title"><h2 class="h2_bmi">BMI 中国标准</h2></div>
-<table><thead><tr><th class="arrow"></th><th>分类</th><th>BMI 范围</th></tr></thead><tbody><tr><td class="arrow"></td><td bgcolor="#CCCCCC">偏瘦</td><td bgcolor="#CCCCCC">&lt;= 18.4</td></tr>
-<tr><td class="arrow"></td><td bgcolor="#66cc00">正常</td><td bgcolor="#66cc00">18.5 ~ 23.9</td></tr>
-<tr><td class="arrow"></td><td bgcolor="#ffff00">过重</td><td bgcolor="#ffff00">24.0 ~ 27.9</td></tr>
-<tr><td class="arrow"></td><td bgcolor="#ff9900">肥胖</td><td bgcolor="#ff9900">&gt;= 28.0</td></tr>
-</tbody></table>
-</div>
-<div class="clear"></div>
-</div>
+    <div class="post-body" itemprop="articleBody">
     </div>
 
     
